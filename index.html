@@ -1,17 +1,33 @@
 <!doctype html>
-<html>
+<html lang="en-US" dir="ltr">
 
 <head>
-    <title>testing</title>
     <meta charset="utf-8">
-    <meta name='author' content='put your name here'>
-    <meta name="description" content="how would you describe this page?">
+    <title>practice exercise</title>
+    <!-- <meta name='author' content='put your name here'>
+    <meta name="description" content="how would you describe this page?"> -->
 </head>
 
 <body>
-    <!-- I am a comment. Create h2, h3, H4, h5 and h6 elements below the h1 element -->
+    <!-- I am a comment. Create h2, h3, H4, h5 and h6 elements below the h1 element
     <h1>I am a H1 Heading</h1>
-    <p>Hello World. I am a simple paragraph.</p>
+    <p>Hello World. I am a simple paragraph.</p> -->
+    <h1>Contact form</h1>
+    <form action='app.processing.php' method='get' target='_blank'>
+        <!-- <p>Purpose of contact: <input type='radio' id='purpose1' name="Business"> <input type='radio' id='purpose2'
+                name='personal'></p> -->
+        <label for="purpose">Purpose of contact:</label>
+        <select name="purpose" id="purpose">
+            <option>(select)</option>
+            <option value="business">business</option>
+            <option value="personal">personal</option>
+        </select>
+        <label for="email"><br>email:<br>
+            <input name="email" id="email" placeholder="abc@gmail.com" required>
+        </label>
+    </form>
+    <iframe src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
+        title="idkwhattonameyou" width='1000' height="300"></iframe>
 </body>
 
 </html>
