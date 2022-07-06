@@ -4,30 +4,87 @@
 <head>
     <meta charset="utf-8">
     <title>practice exercise</title>
-    <!-- <meta name='author' content='put your name here'>
-    <meta name="description" content="how would you describe this page?"> -->
 </head>
 
 <body>
-    <!-- I am a comment. Create h2, h3, H4, h5 and h6 elements below the h1 element
-    <h1>I am a H1 Heading</h1>
-    <p>Hello World. I am a simple paragraph.</p> -->
-    <h1>Contact form</h1>
-    <form action='app.processing.php' method='get' target='_blank'>
-        <!-- <p>Purpose of contact: <input type='radio' id='purpose1' name="Business"> <input type='radio' id='purpose2'
+    <header>
+        <h1>Contact form</h1>
+    </header>
+    <main>
+        <form action='app.processing.php' method='get' target='_blank'>
+            <!-- <p>Purpose of contact: <input type='radio' id='purpose1' name="Business"> <input type='radio' id='purpose2'
                 name='personal'></p> -->
-        <label for="purpose">Purpose of contact:</label>
-        <select name="purpose" id="purpose">
-            <option>(select)</option>
-            <option value="business">business</option>
-            <option value="personal">personal</option>
-        </select>
-        <label for="email"><br>email:<br>
-            <input name="email" id="email" placeholder="abc@gmail.com" required>
-        </label>
-    </form>
-    <iframe src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
-        title="idkwhattonameyou" width='1000' height="300"></iframe>
+            <label for="purpose">Purpose of contact:</label>
+            <select name="purpose" id="purpose">
+                <option>(select)</option>
+                <option value="business">business</option>
+                <option value="personal">personal</option>
+            </select>
+            <br>
+            <label for="name">Name:
+                <input name="name" id="name" maxlength="50">
+            </label>
+            <br>
+            <label for="email">email:
+                <input name="email" id="email" placeholder="abc@gmail.com" required>
+            </label>
+            <br>
+            <label for="phone"> phone
+                <input name="phone" id="phone" type=number>
+            </label>
+            <br>
+            <label for="contact">Preferred contact
+                <ul>
+                    <li><input for="contact" id="contact1" type="radio" name="a">
+                        <label for="contact1">Email</label>
+                    </li>
+                    <li><input for="contact" id="contact2" type="radio" name="a">
+                        <label for="contact2">Phone</label>
+                    </li>
+                </ul>
+            </label>
+            <br>
+            <div>
+                <label for="contactday">Contact Days
+                    <input type="checkbox" for="contactday" id="mond" name="monday">
+                    <label for="mond"> Monday</label>
+                    <input type="checkbox" for="contactday" id="tues" name="tuesday">
+                    <label for="tues"> Tuesday</label>
+                    <input type="checkbox" for="contactday" id="wed" name="wednesday">
+                    <label for="wed"> Wednesday</label>
+                    <input type="checkbox" for="contactday" id="thur" name="thursday">
+                    <label for="thur"> Thursday</label>
+                    <input type="checkbox" for="contactday" id="fri" name="friday">
+                    <label for="fri"> Friday</label>
+                    <input type="checkbox" for="contactday" id="sat" name="saturday">
+                    <label for="sat"> Saturday</label>
+                    <input type="checkbox" for="contactday" id="sun" name="sunday">
+                    <label for="sun"> Sunday</label>
+                </label>
+            </div>
+            <br>
+            <label for="attachment"> Attachment:
+                <input type="file" id="attachment">
+            </label>
+            <br>
+            <label for="message"> Message:
+                <textarea id="message" rows=5></textarea>
+            </label>
+            <br>
+            <label for="submit"> Send
+                <input type="submit" name="submit" value="submit">
+            </label>
+            <label for="clear"></clear> Clear
+                <input type="reset" name="clear" value="clear">
+            </label>
+            <br>
+
+        </form>
+        <iframe src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
+            title="idkwhattonameyou"></iframe>
+        <!-- can use embed, video, object, -->
+
+    </main>
 </body>
 
 </html>
